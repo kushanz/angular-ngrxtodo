@@ -34,3 +34,28 @@ input:focus,
 button:focus {
   outline: unset;
 }
+
+.list-todo {
+  /* display: flex; */
+  list-style: none;
+  padding: 0;
+  flex-direction: column;
+}
+.item-todo {
+  padding: 10px;
+  display: flex;
+}
+.item-todo > span {
+  flex-grow: 1;
+  /* min-width: 0; */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.delete {
+  background-color: #df3b3b;
+  border: unset;
+  color: #fff;
+  padding: 4px 5px;
+  width: 50px;
+}
