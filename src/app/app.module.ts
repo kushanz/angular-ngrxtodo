@@ -20,8 +20,8 @@ import { ListTodoComponent } from "./list-todo/list-todo.component";
       todoState: todoReducer
     }),
     StoreDevtoolsModule.instrument({
-      maxAge: 25, // Retains last 25 states
-      logOnly: environment.production // Restrict extension to log-only mode
+      maxAge: 25 // Retains last 25 states
+      // logOnly: environment.production // Restrict extension to log-only mode
     })
   ],
   declarations: [
