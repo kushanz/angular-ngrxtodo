@@ -1,22 +1,6 @@
 <ul class="list-todo">
-	<li class="item-todo">
-		<span>content Goes Here </span>
-		<button class="delete">Delete</button>
-	</li>
-	<li class="item-todo">
-		<span>content Goes Here </span>
-		<button class="delete">Delete</button>
-	</li>
-	<li class="item-todo">
-		<span>content Goes Here </span>
-		<button class="delete">Delete</button>
-	</li>
-	<li class="item-todo">
-		<span>content Goes Here </span>
-		<button class="delete">Delete</button>
-	</li>
-	<li class="item-todo">
-		<span>content Goes Here </span>
+	<li class="item-todo" *ngFor="let item of list$ | async">
+		<span>{{ item.title }} </span>
 		<button class="delete">Delete</button>
 	</li>
 </ul>
