@@ -1,4 +1,4 @@
 <div class="input-todo">
 	<input [(ngModel)]="todoTitle" (keydown.enter)="addTodo()" />
-	<button>ADD</button>
+	<button (click)="addTodo()">ADD</button>
 </div>
