@@ -8,5 +8,29 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  color: #505253;
+}
+.input-todo {
+  display: grid;
+  grid-template-columns: auto 100px;
+  grid-gap: 10px;
+}
+.input-todo > input {
+  /* width: 100%; */
+  height: 30px;
+  border: unset;
+  background-color: #e4e5e6;
+  padding: 0 10px;
+}
+.input-todo > button {
+  background-color: #9c52b9;
+  border: unset;
+  color: #fff;
+  /* border-radius: 5px; */
+  cursor: pointer;
+}
+input:focus,
+button:focus {
+  outline: unset;
 }
