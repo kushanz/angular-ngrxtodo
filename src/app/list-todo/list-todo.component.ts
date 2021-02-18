@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Observable } from "rxjs";
 import { Todo } from "../../store/todo.interfaces";
+import { remove_todo } from "../../store/todo.actions";
 import { Store } from "@ngrx/store";
 
 @Component({
@@ -14,5 +15,9 @@ export class ListTodoComponent implements OnInit {
 
   ngOnInit() {
     this.list$ = this.store.select(state => state.todoState);
+  }
+  deleteTodo(id) {
+    console.log("delete todo", id);
+    this.store.dispatch(remove_todo({ id }));
   }
 }

@@ -1,6 +1,6 @@
 <ul class="list-todo">
 	<li class="item-todo" *ngFor="let item of list$ | async">
 		<span>{{ item.title }} </span>
-		<button class="delete">Delete</button>
+		<button class="delete" (click)="deleteTodo(item.id)">Delete</button>
 	</li>
 </ul>
