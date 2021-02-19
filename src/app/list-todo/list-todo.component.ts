@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Observable } from "rxjs";
 import { Todo } from "../../store/todo.interfaces";
-import { remove_todo } from "../../store/todo.actions";
+import { remove_todo, toggle_todo } from "../../store/todo.actions";
 import { Store } from "@ngrx/store";
 
 @Component({
@@ -19,5 +19,8 @@ export class ListTodoComponent implements OnInit {
   deleteTodo(id) {
     console.log("delete todo", id);
     this.store.dispatch(remove_todo({ id }));
+  }
+  toggleStatus(id) {
+    this.store.dispatch(toggle_todo({ id }));
   }
 }
