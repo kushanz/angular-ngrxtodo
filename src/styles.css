@@ -57,6 +57,9 @@ button:focus {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+.item-todo > span.done {
+  text-decoration: line-through;
+}
 .delete {
   background-color: #df3b3b;
   border: unset;
