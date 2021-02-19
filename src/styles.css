@@ -48,7 +48,7 @@ button:focus {
   display: flex;
 }
 .item-todo > input[type="checkbox"] {
-  margin: 7px;
+  margin: 5px;
 }
 .item-todo > span {
   flex-grow: 1;
